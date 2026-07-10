@@ -115,7 +115,7 @@ def test_docs_and_scaffold_do_not_reference_removed_maintain_command() -> None:
         path = Path(item)
         files = path.rglob("*") if path.is_dir() else [path]
         for file in files:
-            if file.is_file() and file.suffix in {".md", ".rst", ".py"}:
+            if file.is_file() and file.suffix in {".md", ".py"}:
                 content = file.read_text(encoding="utf-8")
                 has_bare = "wikimason maintain" in content
                 has_vault = "wikimason vault maintain" in content

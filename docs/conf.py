@@ -36,7 +36,6 @@ source_suffix = {".md": "markdown"}
 myst_enable_extensions = ["colon_fence", "deflist"]
 
 html_theme = "sphinx_rtd_theme"
-html_static_path = ["_static"]
 
 autodoc_default_options = {
     "members": True,
